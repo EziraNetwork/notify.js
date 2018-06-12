@@ -4,7 +4,7 @@
  * License: MIT license
  */
 
-const N = window.Notification;
+const N = window ? window.Notification : false;
 
 function isFunction(item) {
     return typeof item === 'function';

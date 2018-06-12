@@ -1,7 +1,7 @@
 (function (global, factory) {
-  typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
-  typeof define === 'function' && define.amd ? define(factory) :
-  (global.Notify = factory());
+	typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
+	typeof define === 'function' && define.amd ? define(factory) :
+	(global.Notify = factory());
 }(this, (function () { 'use strict';
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) {
@@ -60,7 +60,7 @@ var objectWithoutProperties = function (obj, keys) {
  * License: MIT license
  */
 
-var N = window.Notification;
+var N = window ? window.Notification : false;
 
 function isFunction(item) {
     return typeof item === 'function';
