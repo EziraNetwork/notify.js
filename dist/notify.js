@@ -60,7 +60,8 @@ var objectWithoutProperties = function (obj, keys) {
  * License: MIT license
  */
 
-var N = window ? window.Notification : false;
+var window;
+var N = window;
 
 function isFunction(item) {
     return typeof item === 'function';
